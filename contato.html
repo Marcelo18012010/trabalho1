@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lionel Messi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lionel Messi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carreira.html">Carreira</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida ou mensagem para o Messi? Preencha o formulário abaixo para enviar sua mensagem diretamente para nossa equipe.</p>
+
+            <form action="envio.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lionel Messi. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com/leomessi/" target="_blank">Instagram</a> |
+            <a href="https://twitter.com/FCBarcelona" target="_blank">Twitter</a> |
+            <a href="https://www.facebook.com/leomessi" target="_blank">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>

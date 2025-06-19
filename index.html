@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - O Melhor do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header com o nome e navegação -->
+    <header>
+        <h1>Lionel Messi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="carreira.html">Carreira</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Introdução com Efeito de Digitação -->
+    <section id="intro">
+        <h2 id="typed-output"></h2>
+    </section>
+
+    <!-- Seção de Carreira -->
+    <main>
+        <section>
+            <h2>A Carreira de Messi</h2>
+            <p>Lionel Messi é considerado um dos maiores jogadores de futebol de todos os tempos. Sua trajetória inclui vitórias em campeonatos nacionais e internacionais, conquistas de títulos pessoais e recordes que dificilmente serão quebrados. Messi tem uma carreira recheada de prêmios, incluindo sete vezes o Ballon d'Or, e também levou a seleção Argentina à vitória na Copa do Mundo de 2022.</p>
+        </section>
+
+        <section>
+            <h2>Estatísticas de Messi</h2>
+            <ul>
+                <li><strong>Jogos disputados:</strong> Mais de 1.000 jogos oficiais</li>
+                <li><strong>Gols marcados:</strong> Mais de 800 gols (em clubes e seleção)</li>
+                <li><strong>Assistências:</strong> Mais de 350 assistências</li>
+                <li><strong>Ballon d'Or:</strong> 7 títulos (Maior vencedor)</li>
+                <li><strong>Times:</strong> Barcelona, PSG, Seleção Argentina</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section>
+            <h2>O que dizem sobre Messi</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Messi é o melhor jogador de todos os tempos. Sua habilidade com a bola é inigualável!"</p>
+                    <p>- Cristiano Ronaldo</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Jogar ao lado de Messi foi um privilégio. Ele é um fenômeno."</p>
+                    <p>- Neymar Jr.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"O futebol será sempre grato a Messi. Ele elevou o esporte a outro nível."</p>
+                    <p>- Pelé</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curiosidades -->
+        <section>
+            <h2>Curiosidades sobre Messi</h2>
+            <ul>
+                <li>Messi foi diagnosticado com deficiência de hormônio de crescimento quando jovem, mas o Barcelona assumiu os custos de seu tratamento.</li>
+                <li>Ele é o único jogador a ter vencido o prêmio de melhor jogador do mundo (Ballon d'Or) 7 vezes.</li>
+                <li>Messi tem uma grande paixão pelo Rosario Central, seu time de coração da Argentina, embora tenha iniciado sua carreira no Barcelona.</li>
+                <li>É conhecido por sua humildade, apesar de sua grande fama e status de ícone global.</li>
+                <li>Messi tem um vínculo muito forte com sua família e frequentemente compartilha momentos com eles nas redes sociais.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer com Links de Redes Sociais -->
+    <footer>
+        <p>&copy; 2025 Lionel Messi. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com/leomessi/" target="_blank">Instagram</a> |
+            <a href="https://twitter.com/FCBarcelona" target="_blank">Twitter</a> |
+            <a href="https://www.facebook.com/leomessi" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <script>
+        // Efeito de digitação na introdução
+        const typedOutput = document.getElementById('typed-output');
+        const text = "Bem-vindo ao site oficial de Lionel Messi! Explore sua carreira, projetos e muito mais.";
+        let index = 0;
+
+        function typeText() {
+            if (index < text.length) {
+                typedOutput.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 100);
+            }
+        }
+
+        typeText(); // Inicia a digitação
+    </script>
+
+</body>
+</html>
